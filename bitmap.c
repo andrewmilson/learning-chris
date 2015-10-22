@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <limits.h>
+
+typedef int bool;
+#define true 1
+#define false 0
 
 #pragma pack(push,1)
 
@@ -18,7 +23,7 @@ typedef struct {
   short planes; // 2 bytes
   short bitsPerPixel; // 2 bytes
   int unsigned compression; // 4 bytes
-  int unsigned bitmapsize; // 4 bytes
+  int unsigned bitmapSize; // 4 bytes
   int horizontalRes; // 4 bytes
   int verticalRes; // 4 bytes
   int unsigned numColors; // 4 bytes
@@ -34,8 +39,8 @@ int main(int argc, char *argv[]) {
   int n;
   char *data;
 
-  printf("size of BitmapHeader = %d\n", sizeof(BitmapHeader));
-  printf("size of short = %d\n", sizeof(long long));
+  bool val = true;
+  printf("%d\n", val);
 
   // open file (location, "r" == can only read from file)
   input = fopen(argv[1], "r");
