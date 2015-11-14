@@ -33,6 +33,8 @@ typedef struct {
 #pragma pack(pop)
 
 int main(int argc, char *argv[]) {
+  printf("hey\n");
+
   FILE *input, *output;
   // allocate memory to the size in bytes of struct BitmapHeader and FileHeader
   BitmapHeader *bitmapHeader = (BitmapHeader*) malloc(sizeof(BitmapHeader));
