@@ -33,7 +33,7 @@ typedef struct {
 #pragma pack(pop)
 
 int main(int argc, char *argv[]) {
-  printf("hey\n");
+  printf("cats rule");
 
   FILE *input, *output;
   // allocate memory to the size in bytes of struct BitmapHeader and FileHeader
